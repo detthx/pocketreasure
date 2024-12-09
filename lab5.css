@@ -1,281 +1,187 @@
-.open-modal {
-    background-color: #BFAA9D;
-    padding: 10px 15px;
-    color: black;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    display: inine-block;
-    text-decoration: none;
-}
+   .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
 
-.open-modal-hover {
-    background-color:#BFAA9D ;
-}
+        .modal-toggle {
+            display: none;
+        }
+        .open-modal{
+            padding: 3px 10px;
+            background: none;
+            color: black;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            display: inine-block;
+            text-decoration: none;
+            text-align: right;
+            margin-bottom: 11px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
+      
+            
+        }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
+        .modal-toggle:checked+.modal {
+            display: block;
+        }
 
-.modal-toggle {
-    display: none;
-}
+        .modal-content {
+            background-color:whitesmoke;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #121212;
+            width: 300px;
+            border-radius: 5px;
+            position: relative;
+            color:black;
+        }
 
-.modal-toggle:checked+.modal {
-    display: block;
-}
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
 
-.modal-content {
-    background-color: #BFAA9D;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #ffe6fa;
-    width: 300px;
-    border-radius: 5px;
-    position: relative;
-}
+        .close:hover {
+            color: black;
+        }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+        }
 
-.close:hover {
-    color: black;
-}
+        label {
+            margin: 10px 0 5px;
+        }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-label {
-    margin: 10px 0 5px;
-}
+        button[type="submit"] {
+            background-color: #0c0c0c;
+            border: none;
+            padding: 50px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+           
+        }
 
-input[type="text"],
-input[type="password"] {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+        button[type="submit"]:hover {
+            background-color: #0d0e0d;
+        }
+        .open-modala {
+            padding: 5px 10px;
+            background: none;
+            color: black;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            display: inine-block;
+            text-decoration: none;
+            text-align: right;
+       
+      
+            
+        }
 
-button[type="submit"] {
-    background-color: #28a745;
-    border: none;
-    padding: 10px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
+        .open-modal-hover {
+            background-color: #e3eaf3;
+        }
 
-button[type="submit"]:hover {
-    background-color: #218838;
-}
-.open-modala {
-    padding: 5px 10px;
-    background: none;
-    color: black;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    display: inine-block;
-    text-decoration: none;
-    text-align: right;
-    margin-left: 200px;
-    
-}
+        .modala {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            color:black;
+      
+        }
 
-.open-modal-hover {
-    background-color: #BFAA9D;
-}
+        .modal-togglea {
+            display: none;
+           
+        }
 
-.modala {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
+        .modal-togglea:checked+.modala {
+            display: block;
+        }
 
-.modal-togglea {
-    display: none;
-}
+        .modala-content {
+            background-color: #fbfcfd;
+            margin: 0% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 350px;
+         
+            border-radius: 5px;
+            position: relative;
+            color:black;
+        }
 
-.modal-togglea:checked+.modala {
-    display: block;
-}
+        .closea {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
 
-.modala-content {
-    background-color: #BFAA9D;
-    margin: 10px auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 300px;
-    border-radius: 5px;
-    position: relative;
-}
+        .closea:hover {
+            color: black;
+        }
 
-.closea {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+        }
 
-.closea:hover {
-    color: black;
-}
+        label {
+            margin: 10px 0 5px;
+        }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+        input[type="date"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-label {
-    margin: 10px 0 5px;
-}
-
-input[type="date"],
-input[type="password"] {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button[type="submit"] {
-    background-color: #28a745;
-    border: none;
-    padding: 10px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #218838;
-}
-h2{
-    margin-bottom: 20px;
-   text-align: center;
-   font-weight: 100;
-}
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-   
-}
-.open-modal{
-    padding: 10px 15px;
-    background-color: #f4f4f4;
-    color: black;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-}
-.open-modal:hover{
-    background-color: #0cb831;
-}
-.modal{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.modal-toggle{
-display: none;
-}
-.modal-toggle:checked+.modal{
-    display: block;
-}
-.modal-content{
-    background-color: #fefefe;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 300px;
-    border-radius: 5px;
-    position: relative;
-}
-.close{
-    color:#aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 50px;
-}
-.close:hover{
-    color: black;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 5px;
-    
-}
-label{
-    margin: 10px 0 5px;
-}
-input[type="text"],
-input[type="password"]{
-    padding:10px;
-    margin-top: 5px;
-    margin-right: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-
-}
-button[type="Log-in"]{
-    background-color: #28a745;
-    border: none;
-    padding: 10px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button[type="Log-in"]:hover{
-    background-color: #218838;
-}
-.user-need{
-    display:flex;
-    justify-content:flex-end;
-    color: black;
-    
-}
-.user-need a{
-    text-decoration:none;
-}
-.logo{
+        button[type="submit"] {
+            background-color: #141414;
+            border: none;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            width:100px;
+        }
+        .logo{
     height: 50px;
     width: 100px;
     margin:10px auto 0px 20px;
@@ -448,3 +354,4 @@ footer{
 }
 
 
+          
